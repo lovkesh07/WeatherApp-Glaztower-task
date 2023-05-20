@@ -8,32 +8,34 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    /* background: url('./Assets/background-faqs.jpg') no-repeat 50% 40% / cover; */
-    background-color: rgb(174, 241, 219);
-    
+    background: linear-gradient(90deg,rgb(76, 255, 76),rgb(255, 255, 59));
 }
-/* h1 {
-    font-weight: bold;
-} */
+
 .form-container {
     background: url('https://img.freepik.com/premium-photo/field-with-lightning-bolt-horizon_859228-293.jpg?w=2000') no-repeat 50% 40% / cover;
     height: auto;
-    /* @apply w-2/4 p-5  */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .container1{
-    /* background-color: rgb(174, 241, 219); */
-    background: url('./Assets/background-faqs.jpg') no-repeat 50% 40% / cover;
-    /* background-image: linear-gradient(45deg, #efefef 0%, #e0dddd 50%); */
-
+    background: url('./Assets/background-faqs.jpg') no-repeat 50% 40% / cover; 
 }
-/* 
-.blur{
-    position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background: #a6ddf0;
-    filter: blur(72px);
-    z-index: -111;
-  } */
+
+.maincon2{
+    padding-top:50px ;
+    background: linear-gradient(90deg,rgba(26, 184, 247, 0.653),rgb(255, 255, 128));
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media only screen and (max-width: 767px) {
+    .maincon2{
+       margin-top: 20px;
+       margin-bottom: 20px;
+       border-radius: 20px;
+       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    .form-container{
+       border-radius: 20px;
+       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
