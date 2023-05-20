@@ -8,23 +8,32 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    /* background: url('./Assets/background-faqs.jpg') no-repeat 50% 40% / cover; */
+    background-color: rgb(174, 241, 219);
+    
 }
-h1 {
+/* h1 {
     font-weight: bold;
-}
+} */
 .form-container {
-    background: url('https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?cs=srgb&dl=pexels-pixabay-209831.jpg&fm=jpg') no-repeat 50% 40% / cover;
+    background: url('https://img.freepik.com/premium-photo/field-with-lightning-bolt-horizon_859228-293.jpg?w=2000') no-repeat 50% 40% / cover;
     height: auto;
     /* @apply w-2/4 p-5  */
 }
 
-.alert-notice::after {
-    content:'';
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    border-radius: 50%;
-    margin-left: 2px;
-    margin-top: -3px;
-    @apply animate-ping bg-pink-800
+.container1{
+    /* background-color: rgb(174, 241, 219); */
+    background: url('./Assets/background-faqs.jpg') no-repeat 50% 40% / cover;
+    /* background-image: linear-gradient(45deg, #efefef 0%, #e0dddd 50%); */
+
 }
+/* 
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #a6ddf0;
+    filter: blur(72px);
+    z-index: -111;
+  } */

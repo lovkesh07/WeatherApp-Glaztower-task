@@ -3,7 +3,7 @@ import moment from 'moment'
 function SummaryCard({day}) {
     let day_icon = `${process.env.REACT_APP_ICON_URL + day.weather[0]["icon"]}@2x.png`
     return (
-        <li className="container p-2 flex items-center justify-center bg-gray-200 rounded-lg my-auto mr-1">
+        <li className="container1 p-2 flex items-center justify-center bg-gray-200 rounded-lg my-auto mr-1">
             <div className="my-auto">
                 <p className="font-bold text-xl text-pink-600 mb-2">{Math.round(day.main.temp)}&deg;C</p>
                 <p className="text-2xl text-gray-800 tracking-widest">{day.weather[0].main}

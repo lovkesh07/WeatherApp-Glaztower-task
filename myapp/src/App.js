@@ -48,16 +48,18 @@ function App() {
   }
 
   return (
-    <div className="bg-gray-200 flex items-center justify-center w-screen h-screen py-10 ">
-      <div className="flex  min-h-full  shadow-lg m-auto bg-gray-100 grid grid-cols-1 lg:grid-cols-2">
-          {/* form card section  */}
-          
-          {/* <div className=" grid grid-cols-1 lg:grid-cols-2"> */}
+    <>
 
-        <div className="form-container w-[580px] p-10 py-10 ">
+    <div className=" h-fit flex items-center justify-center w-screen h-screen py-2 z-50">
+     
+      <div className="flex min-h-full rounded-[20px] drop-shadow-4xl m-auto 
+       
+       grid grid-cols-1 lg:grid-cols-2">
+
+        <div className="form-container drop-shadow-2xl rounded-[20px] w-[580px]  p-10 py-10 ">
           <div className="flex items-center justify-center">
             <h3 className="my-auto mr-auto text-xl text-pink-800 font-bold shadow-md py-1 px-3 
-            rounded-md bg-white bg-opacity-30">forecast</h3>
+            rounded-md bg-white bg-opacity-30">Forecast</h3>
             <div className="flex p-2 text-gray-100 bg-gray-600 bg-opacity-30 rounded-lg">
             <i className="fa fa-map my-auto" aria-hidden="true"></i>
               <div className="text-right">
@@ -66,7 +68,7 @@ function App() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center h-full">
-            <h1 className="text-white text-2xl">The Only Weather Forecast You Need</h1>
+            <h1 className="text-white text-xl"> Weather Forecast App</h1>
             <hr className="h-1 bg-white w-1/4 rounded-full my-5" />
             <form noValidate onSubmit={handleSubmit} className="flex justify-center w-full">
               <input type="text" 
@@ -85,16 +87,16 @@ function App() {
           </div>
         </div>
 
-        {/* info card section  */}
+
         <div className="w-[580px] p-5 ">
-          {/* <Header /> */}
+
           <div className="flex flex-col my-1">
             {weatherData.length === 0 ? 
               <div className="container p-4 flex items-center justify-center h-1/3 mb-auto">
                 <h1 className="text-gray-300 text-4xl font-bold uppercase">{noData}</h1>
               </div> :
               <>
-                <h1 className="text-2xl sm:text-center sm:text-4xl text-gray-800 mt-auto mb-2">Today</h1>
+                <h1 className="text-4xl sm:text-center sm:text-4xl text-gray-800 mt-auto mb-2">Today</h1>
                 <DetailCard weather_icon={weatherIcon} data={weatherData} />
                 <h1 className="text-3xl sm:text-center sm:text-4xl text-gray-600 mb-4 mt-10">More On {city}</h1>
                 <ul className="grid grid-cols-2  gap-2">
@@ -110,14 +112,11 @@ function App() {
             }
           </div>
         </div>
-        {/* <div className="bg-black w-[50%] p-5">01</div> */}
-        {/* <div className="bg-white w-[50%] p-5">01</div> */}
 
-      {/* </div> */}
+        </div>
+        </div>
 
-
-      </div>
-    </div>
+    </>
   );
 }
 
