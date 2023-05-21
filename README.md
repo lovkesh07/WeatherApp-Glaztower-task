@@ -1,5 +1,10 @@
 # WeatherApp-Glaztower-task
 
+![img1](https://github.com/lovkesh07/WeatherApp-Glaztower-task/assets/79805511/e64247ab-bfec-46a3-a422-cc17b0080fa2)
+![img2](https://github.com/lovkesh07/WeatherApp-Glaztower-task/assets/79805511/d3ac86b2-e7b5-4a78-8760-d977d612ea06)
+![img3](https://github.com/lovkesh07/WeatherApp-Glaztower-task/assets/79805511/16d5c426-d21a-4eb1-8007-2d1b2fd72e09)
+![img4](https://github.com/lovkesh07/WeatherApp-Glaztower-task/assets/79805511/91593606-295b-40f6-a309-13cb6ec940ef)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
