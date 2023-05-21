@@ -20,6 +20,14 @@ body {
 .container1{
     background: url('./Assets/background-faqs.jpg') no-repeat 50% 40% / cover; 
 }
+.container{
+    background: rgba(208, 255, 0, 0.3);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 13px );
+-webkit-backdrop-filter: blur( 13px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
 .maincon2{
     padding-top:50px ;
@@ -38,4 +46,6 @@ body {
        border-radius: 20px;
        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
+    
 }
+

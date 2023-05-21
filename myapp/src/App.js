@@ -1,11 +1,11 @@
 import { useState } from "react";
-import DetailCard from "./components/DetailCard";
-import SummaryCard from "./components/SummaryCard";
-import { TbMapSearch } from 'react-icons/tb'
-import { TbSearch } from 'react-icons/tb'
+import DetailCard from "./WeatherApp/DetailCard";
+import SummaryCard from "./WeatherApp/SummaryCard";
+
 
 function App() {
   const API_KEY = process.env.REACT_APP_API_KEY
+
 
   const [noData, setNoData] = useState('No Data Yet')
   const [searchTerm, setSearchTerm] = useState('')
@@ -33,7 +33,8 @@ function App() {
       let data = await res.json()
       if(data.cod != 200) {
         setNoData('Location Not Found')
-        return
+        
+        return 
       }
       setWeatherData(data)
       setCity(`${data.city.name}, ${data.city.country}`)
@@ -48,6 +49,10 @@ function App() {
     getWeather([latitude, longitude])
   }
 
+
+ 
+
+
   return (
     <>
 
@@ -59,32 +64,34 @@ function App() {
 
         <div className="form-container drop-shadow-2xl rounded-l-[20px] w-[580px]  p-10 py-10 ">
           <div className="flex items-center justify-center">
-            <h3 className="my-auto mr-auto text-xl font-bold shadow-md py-1 px-3 
-            rounded-md bg-white bg-opacity-30">Forecast</h3>
+            
             <div className="flex p-2 text-gray-100 bg-gray-600 bg-opacity-30 rounded-lg">
             <i className="fa fa-map my-auto" aria-hidden="true"></i>
               <div className="text-right ">
-                <p className="font-semibold text-sm ml-2">{city}</p>
+                <p className="font-semibold text-[20px] ml-2">{city}</p>
               </div>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center h-full">
-            <h1 className="text-white text-xl"> Weather Forecast App</h1>
+            <h1 className="text-white text-4xl"> Weather Forecast App</h1>
             <hr className="h-1 bg-white w-1/4 rounded-full my-5" />
             <form noValidate onSubmit={handleSubmit} className="flex justify-center w-full">
               <input type="text" 
-                placeholder="Enter location... (Eg. Delhi,Goa..)" 
+                placeholder="Enter location... (eg. Delhi,Goa..)" 
                 className="relative rounded-xl py-2 px-3 w-2/3 bg-gray-300 bg-opacity-60 text-white placeholder-gray-200"
                 onChange={handleChange} 
+               
                 required />
-                <button type="submit" className="z-10">
-                {/* <TbSearch /> */}
+                <button type="submit" className="z-10" >
+                
+                
                   <i className="fa fa-search text-black -ml-10 border-l my-auto z-10 cursor-pointer p-3" 
                   aria-hidden="true" type="submit"></i>
                 </button>
               <i className="fa fa-map-marker-alt my-auto cursor-pointer p-3 text-white" aria-hidden="true" onClick={() => {
                 navigator.geolocation.getCurrentPosition(myIP)
               }}></i>
+
             </form>
           </div>
         </div>
@@ -96,6 +103,7 @@ function App() {
             {weatherData.length === 0 ? 
               <div className="container p-4 flex items-center justify-center h-1/3 mb-auto">
                 <h1 className="text-gray-800 text-4xl font-bold uppercase">{noData}</h1>
+              
               </div> :
               <>
                 <h1 className="text-4xl sm:text-center sm:text-4xl text-black-800 mt-auto mb-2">Today</h1>
@@ -124,4 +132,3 @@ function App() {
 
 export default App;
 
-//  grid grid-cols-2  gap-2

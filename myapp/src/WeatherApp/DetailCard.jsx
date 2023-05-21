@@ -20,6 +20,8 @@ function DetailCard({weather_icon, data}) {
             <p className="text-gray-400 text-lg">Cloud Cover: {clouds.all}%</p>
             <p className="text-gray-400 text-lg">Min Temp: {Math.round(main.temp_min)}&deg;C</p>
             <p className="text-gray-400 text-lg">Max Temp: {Math.round(main.temp_max)}&deg;C</p>
+           
+
             </div>
         </div>
     )
